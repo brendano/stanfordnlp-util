@@ -1,0 +1,18 @@
+Little programs that run routines from inside the Stanford NLP system:
+
+ * Depper: runs the Stanford Dependency coverter on PTB-style phrase structure
+   trees from standard input.  Runs the lemmatizer too.  Works with Stanford
+   CoreNLP version 2012-01-08.  Outputs either CoNLL format, or a JSON-based
+   format.  If using PTB gold-standard parses, make sure to remove traces
+   first: e.g. with wsj-removetraces.pl from srlconll-1.1.
+
+ * StanfordParserServer: a socket (telnet) server to get a phrase-structure
+   parse from a sentence.  It requires some old version of the Stanford parser,
+   maybe circa 2008-9 or so; this should be updated.
+
+No guarantee of consistency or usability given, please read the code before
+using.
+
+Stanford NLP: http://nlp.stanford.edu/software/
+srlconll-1.1: http://www.lsi.upc.edu/~srlconll/soft.html#srlconll
+
